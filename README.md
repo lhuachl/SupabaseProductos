@@ -75,8 +75,8 @@ app/
 
 ### Tecnologías Utilizadas
 
-- **Kotlin** - Lenguaje de programación
-- **Jetpack Compose** - Framework de UI declarativa
+- **Kotlin 2.0.21** - Lenguaje de programación moderno
+- **Jetpack Compose** - Framework de UI declarativa con Compose Compiler Plugin
 - **Room** - Base de datos SQLite local
 - **Supabase** - Backend as a Service (PostgreSQL + Realtime)
 - **Coroutines & Flow** - Programación asíncrona y reactiva
@@ -84,6 +84,16 @@ app/
 - **Material Design 3** - Sistema de diseño
 - **ViewModel & StateFlow** - Gestión de estado
 - **ToneGenerator** - Generación de sonidos del sistema
+
+### Configuración de Jetpack Compose
+
+Este proyecto utiliza la configuración moderna de Jetpack Compose con Kotlin 2.0+:
+
+- **Compose Compiler Plugin** (`org.jetbrains.kotlin.plugin.compose`) - Gestión automática de versiones del compilador
+- **Compose BOM** - Gestión centralizada de versiones de bibliotecas Compose
+- Sin necesidad de configurar manualmente `kotlinCompilerExtensionVersion`
+
+Para más detalles sobre la configuración de Compose, consulta [COMPOSE_CONFIGURATION.md](COMPOSE_CONFIGURATION.md).
 
 ## Configuración
 
