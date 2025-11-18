@@ -9,7 +9,7 @@
 
 plugins {
     // Android Gradle Plugin for building Android applications
-    id("com.android.application") version "8.3.0" apply false
+    id("com.android.application") version "8.9.1" apply false
     
     // Kotlin Android plugin for Kotlin support
     id("org.jetbrains.kotlin.android") version "2.0.21" apply false
