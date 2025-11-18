@@ -39,10 +39,22 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    
+    // Jetpack Compose Configuration
+    // Using Kotlin 2.0+ with the Compose Compiler Plugin (org.jetbrains.kotlin.plugin.compose)
+    // This modern approach automatically handles Compose compiler configuration
+    // No need to manually set kotlinCompilerExtensionVersion as in older setups
     buildFeatures {
-        compose = true
+        compose = true  // Enable Jetpack Compose
         buildConfig = true
     }
+    
+    // Note: With Kotlin 2.0+ and the Compose plugin, composeOptions block is not needed
+    // The plugin automatically configures the correct Compose compiler version
+    // For older Kotlin versions (<2.0), you would need:
+    // composeOptions {
+    //     kotlinCompilerExtensionVersion = "1.5.10"
+    // }
 }
 
 dependencies {
